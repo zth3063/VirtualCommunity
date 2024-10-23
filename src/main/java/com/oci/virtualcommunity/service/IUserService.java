@@ -7,5 +7,6 @@ public interface IUserService {
     public User add(User user);
     public User update(User user);
     public User select(Integer userId);
+    public User selectByName(String name);
     public void delete(Integer userId);
 }

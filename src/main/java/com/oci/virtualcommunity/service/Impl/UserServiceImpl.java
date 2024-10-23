@@ -33,6 +33,11 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public User selectByName(String name) {
+        return userRepository.selectByName(name);
+    }
+
+    @Override
     public void delete(Integer userId) {
         userRepository.deleteById(userId);
     }
